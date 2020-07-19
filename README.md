@@ -25,7 +25,7 @@ AppauthWrapper is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AppauthWrapper'
+pod 'AppauthWrapper','~> 0.1.0'
 ```
 
 ## Author
