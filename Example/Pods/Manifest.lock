@@ -1,0 +1,27 @@
+PODS:
+  - AppAuth (1.2.0):
+    - AppAuth/Core (= 1.2.0)
+    - AppAuth/ExternalUserAgent (= 1.2.0)
+  - AppAuth/Core (1.2.0)
+  - AppAuth/ExternalUserAgent (1.2.0)
+  - AppauthWrapper (0.1.0):
+    - AppAuth (~> 1.2.0)
+
+DEPENDENCIES:
+  - AppauthWrapper (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+
+EXTERNAL SOURCES:
+  AppauthWrapper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
+  AppauthWrapper: 0bb0d0444a8ef94d4d5c8a73367c35ef48dd127c
+
+PODFILE CHECKSUM: b0c9050c31161ab6f52e667889e868d2eee16cb2
+
+COCOAPODS: 1.9.3

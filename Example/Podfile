@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AppauthWrapper_Example' do
+  pod 'AppauthWrapper', :path => '../'
+
+  target 'AppauthWrapper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

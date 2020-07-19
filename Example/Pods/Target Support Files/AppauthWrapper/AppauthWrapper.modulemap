@@ -1,0 +1,6 @@
+framework module AppauthWrapper {
+  umbrella header "AppauthWrapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

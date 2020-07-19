@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bg5-7x-CQX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App AuthVC-->
+        <scene sceneID="RHv-wE-Y6b">
+            <objects>
+                <viewController storyboardIdentifier="AppAuthVC" id="fO7-QW-vdd" customClass="AppAuthVC" customModule="AppauthWrapper_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqa-gF-bVk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="XuX-3o-bGe">
+                                <rect key="frame" x="62.5" y="159" width="250" height="349"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmw-FY-cHW">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="BTQ-mn-8ht"/>
+                                            <constraint firstAttribute="height" constant="200" id="gWW-5J-kqT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snc-QO-U0y">
+                                        <rect key="frame" x="0.0" y="300" width="250" height="49"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="G4d-FP-fWl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="dkh-ht-NtH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Refresh Request">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="refreshTokenAction:" destination="fO7-QW-vdd" eventType="touchUpInside" id="mix-pz-Jhx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XuX-3o-bGe" firstAttribute="centerY" secondItem="bqa-gF-bVk" secondAttribute="centerY" id="6Pk-Cr-8E4"/>
+                            <constraint firstItem="XuX-3o-bGe" firstAttribute="centerX" secondItem="bqa-gF-bVk" secondAttribute="centerX" id="ctb-1D-sZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H0N-gQ-gch"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qBE-QB-YQD">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="lHa-1F-k9X">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2aw-YT-p0s">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign-In"/>
+                                <connections>
+                                    <action selector="signInAction:" destination="fO7-QW-vdd" eventType="touchUpInside" id="9SZ-fx-7z8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="OcC-kU-OI0">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pyh-ZJ-OUf">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign-Out"/>
+                                <connections>
+                                    <action selector="signOutAction:" destination="fO7-QW-vdd" eventType="touchUpInside" id="jEe-57-igm"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnSignIn" destination="2aw-YT-p0s" id="XMw-Dw-HcK"/>
+                        <outlet property="btnSignOut" destination="Pyh-ZJ-OUf" id="iDR-53-Ox0"/>
+                        <outlet property="lblToken" destination="qmw-FY-cHW" id="FcH-UX-foB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAS-UO-kiC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Irv-03-M5U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bg5-7x-CQX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3XO-F9-5e6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fO7-QW-vdd" kind="relationship" relationship="rootViewController" id="xGN-CT-Wof"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSr-4L-Wof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="27"/>
+        </scene>
+    </scenes>
+</document>

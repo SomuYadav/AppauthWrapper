@@ -1,0 +1,6 @@
+framework module Pods_AppauthWrapper_Example {
+  umbrella header "Pods-AppauthWrapper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
