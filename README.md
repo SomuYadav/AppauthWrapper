@@ -66,7 +66,7 @@ import AppAuth
 ...
 ```
 
-Make a conatant file and write this var(s)
+Make a constant file and write this var(s)
 
 ```swift
 let clientID                   = ""
