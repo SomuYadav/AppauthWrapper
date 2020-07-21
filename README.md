@@ -31,8 +31,7 @@ pod 'AppauthWrapper','~> 0.1.0'
 
 import framework AppauthWrapper and write this code in AppDelegate
 
-```
-swift
+```swift
 import AppauthWrapper
 import AppAuth
 
@@ -69,7 +68,7 @@ import AppAuth
 
 Make a conatant file and write this var(s)
 
-```
+```swift
 let clientID                   = ""
 let clientSecret               = ""
 let redirectURI                = ""
@@ -85,8 +84,7 @@ let endSessionPointsURL        = ""
 ```
 
 Before Sign-in method call you have to initialize AppAuth Class, you can initialize in `AppDelegate` or if you want more optimization you can write before Sign-In. 
-```
-swift
+```swift
 (UIApplication.shared.delegate as! AppDelegate).objAppAuth = AppAuth(
             clientID,
             clientSecret,
@@ -104,7 +102,7 @@ swift
 You can use Sign-In & Sign-Out like this
 
 Sign-In: 
-```
+```swift
  appDelegate.app?.signIn(self, { (bool) in
    if bool {
 
@@ -117,7 +115,7 @@ Sign-In:
 
 ```
 Sign-Out:
-```
+```swift
 appDelegate.app?.signOut({ (bool) in
   if bool {
     
@@ -128,16 +126,16 @@ appDelegate.app?.signOut({ (bool) in
 ```
 
 For Refresh token and accessToken you can use like this:
-```
+```swift
 AppAuth.authState?.lastTokenResponse?.refreshToken
 AppAuth.authState?.lastTokenResponse?.accessToken
 
-```
 Refernces:
+```swift
 https://github.com/openid/AppAuth-iOS.
 https://developer.forgerock.com/docs/platform/how-tos/implementing-oauth-20-authorization-code-grant-protected-pkce-appauth-sdk-ios.
 https://www.raywenderlich.com/243-oauth-2-0-with-swift-tutorial.
-
+```
 ## Author
 
 Somendra Yadav, somendra.sy@gmail.com
