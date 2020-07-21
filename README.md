@@ -129,13 +129,13 @@ For Refresh token and accessToken you can use like this:
 ```swift
 AppAuth.authState?.lastTokenResponse?.refreshToken
 AppAuth.authState?.lastTokenResponse?.accessToken
-
-Refernces:
-```swift
-https://github.com/openid/AppAuth-iOS.
-https://developer.forgerock.com/docs/platform/how-tos/implementing-oauth-20-authorization-code-grant-protected-pkce-appauth-sdk-ios.
-https://www.raywenderlich.com/243-oauth-2-0-with-swift-tutorial.
 ```
+
+Refernces: \n
+https://github.com/openid/AppAuth-iOS \n.
+https://developer.forgerock.com/docs/platform/how-tos/implementing-oauth-20-authorization-code-grant-protected-pkce-appauth-sdk-ios \n.
+https://www.raywenderlich.com/243-oauth-2-0-with-swift-tutorial.
+
 ## Author
 
 Somendra Yadav, somendra.sy@gmail.com
