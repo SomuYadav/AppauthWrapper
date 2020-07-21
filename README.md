@@ -31,7 +31,8 @@ pod 'AppauthWrapper','~> 0.1.0'
 
 import framework AppauthWrapper and write this code in AppDelegate
 
-```swift
+```
+swift
 import AppauthWrapper
 import AppAuth
 
@@ -64,6 +65,7 @@ import AppAuth
         return false
     }
 ...
+```
 
 Make a conatant file and write this var(s)
 
@@ -82,7 +84,6 @@ let endSessionPointsURL        = ""
 
 ```
 
-```
 Before Sign-in method call you have to initialize AppAuth Class, you can initialize in `AppDelegate` or if you want more optimization you can write before Sign-In. 
 ```
 swift
