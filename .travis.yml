@@ -9,4 +9,4 @@ env:
   - ACTION=test  PLATFORM=iOS   DESTINATION='platform=iOS Simulator,name=iPhone 11'
 
 script:
-  - set -o pipefail && xcodebuild -scheme AppauthWrapper_Example  -destination "$DESTINATION" $ACTION | xcpretty
+  - set -o pipefail && xcodebuild -scheme -list AppauthWrapper_Example  -destination "$DESTINATION" $ACTION | xcpretty
