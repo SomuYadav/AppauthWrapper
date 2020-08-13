@@ -1,6 +1,6 @@
 language: objective-c
 os: osx
 osx_image: xcode11.5
-xcode_project: AppauthWrapper.xcodeproj # path to your xcodeproj folder
+# xcode_project: AppauthWrapper.xcodeproj path to your xcodeproj folder
 xcode_scheme: AppauthWrapper-Example
 xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone X
