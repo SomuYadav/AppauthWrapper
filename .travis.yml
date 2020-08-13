@@ -1,6 +1,12 @@
 language: objective-c
-os: osx
+#os: osx
 osx_image: xcode11.5
-xcode_workspace: Example/AppauthWrapper.xcworkspace #path to your xcodeproj folder
-xcode_scheme: AppauthWrapper-Example
-xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 11
+#xcode_workspace: Example/AppauthWrapper.xcworkspace #path to your xcodeproj folder
+#xcode_scheme: AppauthWrapper-Example
+#xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 11
+
+env:
+  - ACTION=test  PLATFORM=iOS   DESTINATION='platform=iOS Simulator,name=iPhone 11'
+
+script:
+  - set -o pipefail && xcodebuild -scheme AppauthWrapper-Example -destination "$DESTINATION" $ACTION | xcpretty
