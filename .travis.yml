@@ -1,12 +1,12 @@
-language: objective-c
-#os: osx
+language: swift
+cache: cocoapods
+podfile: Example/Podfile
 osx_image: xcode11.5
-#xcode_workspace: Example/AppauthWrapper.xcworkspace #path to your xcodeproj folder
-#xcode_scheme: AppauthWrapper-Example
-#xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 11
 
-env:
-  - ACTION=test  PLATFORM=iOS   DESTINATION='platform=iOS Simulator,name=iPhone 11'
+before_install:
+ - gem install cocoapods # Since Travis is not always on latest version
+ - pod install --project-directory=Example
 
 script:
-  - set -o pipefail && xcodebuild -scheme Prducts/AppauthWrapper_Example.app  -destination "$DESTINATION" $ACTION | xcpretty
+  - set -o pipefail && xcodebuild -workspace Example/AppauthWrapper.xcworkspace -scheme AppauthWrapper -sdk iphonesimulator13.5 ONLY_ACTIVE_ARCH=NO  | xcpretty
+  - pod lib lint
