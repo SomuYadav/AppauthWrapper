@@ -10,8 +10,3 @@ before_install:
 script:
   - set -o pipefail && xcodebuild -workspace Example/AppauthWrapper.xcworkspace -scheme  AppauthWrapper -sdk iphonesimulator13.5 ONLY_ACTIVE_ARCH=NO  | xcpretty
   - pod lib lint --allow-warnings
- 
-xcode_project: AppauthWrapper.xcodeproj
-xcode_scheme: AppauthWrapper
-xcode_sdk:
-  - iphonesimulator13.5
