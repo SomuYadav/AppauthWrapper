@@ -1,5 +1,4 @@
 language: swift
-all_branches: true
 cache: cocoapods
 podfile: Example/Podfile
 osx_image: xcode11.5
@@ -12,9 +11,7 @@ script:
   - set -o pipefail && xcodebuild -workspace Example/AppauthWrapper.xcworkspace -scheme  AppauthWrapper -sdk iphonesimulator13.5 ONLY_ACTIVE_ARCH=NO  | xcpretty
   - pod lib lint --allow-warnings
  
-deploy:
-  provider: script
-  script: chmod +x ./scripts/push.sh && ./scripts/push.sh
-  skip_cleanup: true
-  on:
-    tags: true
+xcode_project: AppauthWrapper.xcodeproj
+xcode_scheme: AppauthWrapper
+xcode_sdk:
+  - iphonesimulator13.5
