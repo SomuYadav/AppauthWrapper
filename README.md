@@ -1,6 +1,6 @@
 # AppauthWrapper
 
-[![Travis Status](https://img.shields.io/travis/SomuYadav/AppauthWrapper.svg?style=flat)](https://travis-ci.org/SomuYadav/AppauthWrapper)
+[![Travis CI](https://img.shields.io/travis/SomuYadav/AppauthWrapper.svg?style=flat)](https://travis-ci.org/SomuYadav/AppauthWrapper)
 [![Version](https://img.shields.io/cocoapods/v/AppauthWrapper.svg?style=flat)](https://cocoapods.org/pods/AppauthWrapper)
 [![License](https://img.shields.io/cocoapods/l/AppauthWrapper.svg?style=flat)](https://cocoapods.org/pods/AppauthWrapper)
 [![Platform](https://img.shields.io/cocoapods/p/AppauthWrapper.svg?style=flat)](https://cocoapods.org/pods/AppauthWrapper)
