@@ -115,8 +115,8 @@ appDelegate.app?.signOut({ (bool) in
 
 For Refresh token and accessToken you can use like this:
 ```swift
-AppAuth.authState?.lastTokenResponse?.refreshToken
-AppAuth.authState?.lastTokenResponse?.accessToken
+AppAuth.authState?.lastTokenResponse?.refreshToken()
+AppAuth.authState?.lastTokenResponse?.accessToken()
 ```
 
 Refernces:
