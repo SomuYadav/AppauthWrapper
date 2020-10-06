@@ -19,7 +19,20 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
   `iOS 9.0 or later`
   `Swift 4.2`
-## Installation
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. It is in early development, but AppAuthWrapper does support its use on supported platforms.
+
+Once you have your Swift package set up, adding AppAuthWrapper as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0"))
+]
+```
+  
+## CocoaPod
 
 AppauthWrapper is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
