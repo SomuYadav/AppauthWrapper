@@ -28,7 +28,7 @@ Once you have your Swift package set up, adding AppAuthWrapper as a dependency i
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.2.0"))
+    .package(url: "https://github.com/SomuYadav/AppauthWrapper.git", .upToNextMajor(from: "0.1.0"))
 ]
 ```
   
