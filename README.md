@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/AppauthWrapper.svg?style=flat)](https://cocoapods.org/pods/AppauthWrapper)
 [![Platform](https://img.shields.io/cocoapods/p/AppauthWrapper.svg?style=flat)](https://cocoapods.org/pods/AppauthWrapper)
 
-<img src="images/SwiftUI2.0.png">
+<img src="Sources/OAuth2.0.jpg">
  
 `AppauthWrapper` is a `AppAuth` extension framework, which is using to reduce the AppAuth code and directly providing the short methods for Sign-in and Sign-Out, no need to manage authetication code, which is directly managing by `AppAuth` framework.Some Features of `AppauthWrapper`:
      
